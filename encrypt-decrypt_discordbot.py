@@ -17,11 +17,11 @@ async def encrypt(ctx, key='none', *, text='none'):
         keyVal = ['none'] * len(key)
         encText = ['none'] * len(text)
         c = 0
-        for char in key:    # 'keyVal[]' has an array of all ASCII chars in 'key'
+        for char in key:
             keyVal[c] = ord(char)
             c += 1
         c = 0
-        for char in text:   # 'encText[]' has an array of all ASCII chars in 'text'
+        for char in text:
             encText[c] = ord(char) - 32
             encText[c] += keyVal[c % len(key)]
             encText[c] %= 94
@@ -41,11 +41,11 @@ async def decrypt(ctx, key='none', *, text='none'):
         keyVal = ['none'] * len(key)
         encText = ['none'] * len(text)
         c = 0
-        for char in key:    # 'keyVal[]' has an array of all ASCII chars in 'key'
+        for char in key:
             keyVal[c] = ord(char)
             c += 1
         c = 0
-        for char in text:   # 'encText[]' has an array of all ASCII chars in 'text'
+        for char in text:
             encText[c] = ord(char) - 32
             encText[c] -= keyVal[c % len(key)]
             while encText[c] < 0:
