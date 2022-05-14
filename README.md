@@ -1,7 +1,8 @@
 # encrypter-bot
-010101010101010
+Vigenère cipher
+
 - USAGE
 
-;encrypt (key - no spaces) (text to encrypt)
+;encrypt (key) (text to encrypt)
 
-;decrypt (key - no spaces) (text to decrypt)
+;decrypt (key) (text to decrypt)
