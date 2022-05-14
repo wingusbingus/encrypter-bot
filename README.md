@@ -1,5 +1,5 @@
 # encrypter-bot
-Vigenère cipher
+    == Vigenère cipher ==
 
 - USAGE
 
